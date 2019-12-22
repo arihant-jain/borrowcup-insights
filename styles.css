@@ -1,7 +1,30 @@
+html {
+  height: 100%;
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+body {
+  	height: auto;
+	/*
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+	-webkit-transform: perspective(24em);
+          transform: perspective(24em);
+  	-webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+	*/
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
 }
+
+.heading {
+	color: white;
+	font-family: 'Cairo', sans-serif;
+}
+
 .qrcode-text-btn {
   display: inline-block;
   height: 1em;
@@ -20,13 +43,13 @@
 }
 
 .qrcode-text {
-  padding-right: 1.7em;
+  padding-right: 2.0em;
   margin-right: 0;
   vertical-align: middle;
 }
 
 .qrcode-text + .qrcode-text-btn {
-  width: 1.7em;
-  margin-left: -1.7em;
+  width: 1.0em;
+  margin-left: -1.5em;
   vertical-align: middle;
 }

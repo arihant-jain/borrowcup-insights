@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Insights App</title>
-    <script
-      type="text/javascript"
-      src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"
-    ></script>
-    <script type="text/javascript" src="./index.js"></script>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-  </head>
+<head>
+	<title>Insights App</title>
+	<script
+			type="text/javascript"
+			src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"
+	></script>
+	<script type="text/javascript" src="./index.js"></script>
+	<link rel="stylesheet" type="text/css" href="./styles.css" />
+	<!--<link rel="stylesheet" type="text/css" href="./button.css" />-->
+	<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-    <div id="root">
-      <div class="App">
-        <h1>Hello Planet Saviour!</h1>
-        <h2>Dive into insights!</h2>
-        <div id="qr_box">
-          <input type="text" class="qrcode-text" />
-          <label class="qrcode-text-btn">
-            <input
-              type="file"
-              accept="image/*"
-              capture="environment"
-              tabindex="-1"
-              onchange="openQRCamera(this)"
-            />
-          </label>
-        </div>
-      </div>
-    </div>
-  </body>
+<body>
+	<div id="root">
+		<div class="App"> 
+			<br>
+			<br>
+			<div class="heading">
+				<h1>Hello Planet Saviour!</h1>
+				<h2>Scan the QR and dive into insights!</h2>
+			</div>
+			<div id="qr_box">
+				<input type="text" class="qrcode-text" placeholder="Click the QR icon"/>
+				<label class="qrcode-text-btn">
+				<input
+					   type="file"
+					   accept="image/*"
+					   capture="environment"
+					   tabindex="-1"
+					   onchange="openQRCamera(this)"					
+				/>
+				</label>
+				<!--<button class="awesome" type="file" data-title="Click To Scan" onClick="openQRCamera(this)"></button>
+				<p id="id_holder"></p>
+				-->
+			</div>
+		</div>
+	</div>
+	<!--<script type="text/javascript" src="./button.js"></script>-->
+</body>
 </html>
