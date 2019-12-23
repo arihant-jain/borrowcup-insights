@@ -8,7 +8,9 @@ function openQRCamera(node) {
           "No QR code found. Please make sure the QR code is within the camera's frame and try again."
         );
       } else {
-        node.parentNode.previousElementSibling.value = res;
+        	//node.parentNode.previousElementSibling.value = res;
+		  	cup_id_text_box = document.getElementById('cup_id_text')
+		  	cup_id_text_box.innerHTML = res;
       }
     };
     qrcode.decode(reader.result);

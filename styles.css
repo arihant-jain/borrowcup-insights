@@ -5,9 +5,11 @@ html {
 }
 body {
   	height: auto;
+	background-color: transparent;
+	text-align: center;
 	/*
 	display: flex;
-  	align-items: center;
+  	
 	justify-content: center;
 	-webkit-transform: perspective(24em);
           transform: perspective(24em);
@@ -16,11 +18,15 @@ body {
 	*/
 }
 
-.App {
-  font-family: sans-serif;
+/*.App {
   text-align: center;
+}*/
+
+#cup_id_text {
+	text-shadow: 3px 5px 12px black;
 }
 
+/*
 .heading {
 	color: white;
 	font-family: 'Cairo', sans-serif;
@@ -44,9 +50,11 @@ body {
 }
 
 .qrcode-text {
-  padding-right: 2.0em;
-  margin-right: 0;
-  vertical-align: middle;
+  	padding-right: 2.0em;
+  	margin-right: 0;
+  	vertical-align: middle;
+	height: 40px;
+	
 }
 
 .qrcode-text + .qrcode-text-btn {
@@ -54,3 +62,4 @@ body {
   margin-left: -1.5em;
   vertical-align: middle;
 }
+*/

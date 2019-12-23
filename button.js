@@ -10,7 +10,7 @@ element.addEventListener('mousemove', e => {
   const dx = x - width / 2;
   const dy = y - height / 2;
 
-  documentStyle.setProperty('--rx', `${dy / -1}deg`);
+  documentStyle.setProperty('--rx', `${dy / -5}deg`);
   documentStyle.setProperty('--ry', `${dx / 10}deg`);
 });
 
