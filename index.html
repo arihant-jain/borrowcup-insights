@@ -56,7 +56,14 @@
 		<div class="row">
 			<div class="col-sm">
 				<form>
-					<input id="scan_button" class="awesome" type="file" accept="image/*" tabindex="-1" data-title="Click To Scan" onChange="openQRCamera(this)"/>
+					<input id="scan_button" 
+						   class="awesome" 
+						   type="file" 
+						   accept="image/*" 
+						   tabindex="-1" 
+						   data-title="Click To Scan" 
+						   capture="environment" 
+						   onChange="openQRCamera(this)"/>
 				</form>
 			</div>
 		</div>		
