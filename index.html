@@ -15,20 +15,17 @@
 	
 	<link rel="stylesheet" type="text/css" href="./styles.css" />
 	
-	<link rel="stylesheet" type="text/css" href="./button.css" />
-	<!--
+	<!--<link rel="stylesheet" type="text/css" href="button.css" />
+	
 	<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
 	-->
 	<title>Insights App</title>
 </head>
 
 <body>
-	<div class="container-sm">		
-		<br/>
-		<br/>
+	<div class="container-fluid-sm">
 		<div>
-			<h1 class="display-1 text-white">Hello BorrowCup User!</h1>
-			<br>
+			<h1 class="display-1 text-white m-5">Hello BorrowCup User!</h1>			
 			<h1 class="text-white"><small>Scan the QR and dive into insights</small></h1>
 		</div>
 		<!--
@@ -49,25 +46,33 @@
 			</div>
 		</div>
 		-->
-		<br/>
-		<div class="row">
+		<div class="row m-5">
 			<h2 class="display-1 mx-auto" id="cup_id_text">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</h2>
 		</div>
-		<div class="row">
-			<div class="col-sm">
+		<div class="row m-5">
+			<div class="col-sm-3 mx-auto my-3">
 				<form>
-					<input id="scan_button" 
-						   class="awesome" 
-						   type="file" 
-						   accept="image/*" 
-						   tabindex="-1" 
-						   data-title="Click To Scan" 
-						   capture="environment" 
-						   onChange="openQRCamera(this)"/>
+				<input id="scan_button"
+					   type="file" 
+					   accept="image/*" 
+					   tabindex="-1" 
+					   data-title="Click To Scan"
+					   capture="environment"
+					   onChange="openQRCamera(this)"/>
 				</form>
 			</div>
 		</div>		
+		<div class="row m-5">
+			<div class="col-sm align-middle">
+				Some content here!
+			</div>			
+		</div>
 	</div>
-	<script src="./button.js"></script>
+	<div class="jumbotron jumbotron-fluid bg-dark text-white">
+	  <div class="container-sm">
+		<h6 class="display-4"><small>Thanks for using BorrowCup!</small></h6>
+	  </div>
+	</div>
+	<!--<script src="button.js"></script>-->
 </body>
 </html>
