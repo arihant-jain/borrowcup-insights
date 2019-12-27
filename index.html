@@ -15,9 +15,9 @@
 	
 	<link rel="stylesheet" type="text/css" href="./styles.css" />
 	
-	<!--<link rel="stylesheet" type="text/css" href="button.css" />
+	<link rel="stylesheet" type="text/css" href="button.css" />
 	
-	<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+	<!--<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
 	-->
 	<title>Insights App</title>
 </head>
@@ -46,23 +46,29 @@
 			</div>
 		</div>
 		-->
-		<div class="row m-5">
+		<div class="row my-5 mx-auto">
 			<h2 class="display-1 mx-auto" id="cup_id_text">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</h2>
 		</div>
-		<div class="row m-5">
+		<div class="row my-5 mx-auto">
 			<div class="col-sm-3 mx-auto my-3">
 				<form>
-				<input id="scan_button"
-					   type="file" 
-					   accept="image/*" 
-					   tabindex="-1" 
-					   data-title="Click To Scan"
-					   capture="environment"
-					   onChange="openQRCamera(this)"/>
+					<div class="form-group">
+						<label data-animation="ripple">
+							<input id="scan_button"							   
+								   class="form-control-file"
+								   type="file" 
+								   accept="image/*" 
+								   tabindex="-1" 
+								   data-title="Click To Scan"
+								   capture="environment"
+								   onChange="openQRCamera(this)"/>
+							<h5 class="my-0">Scan</h5>
+						</label>
+					</div>
 				</form>
 			</div>
 		</div>		
-		<div class="row m-5">
+		<div class="row my-5 mx-auto">
 			<div class="col-sm align-middle">
 				Some content here!
 			</div>			
@@ -73,6 +79,6 @@
 		<h6 class="display-4"><small>Thanks for using BorrowCup!</small></h6>
 	  </div>
 	</div>
-	<!--<script src="button.js"></script>-->
+	<script src="button.js"></script>
 </body>
 </html>
