@@ -11,6 +11,9 @@ function openQRCamera(node) {
         	//node.parentNode.previousElementSibling.value = res;
 		  	cup_id_text_box = document.getElementById('cup_id_text')
 		  	cup_id_text_box.innerHTML = res;
+		  	button_heading = document.getElementById('scan_button_text')
+		  	button_heading.innerHTML = 'Scan another cup'
+		  
       }
     };
     qrcode.decode(reader.result);
